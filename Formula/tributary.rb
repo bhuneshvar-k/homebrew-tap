@@ -11,7 +11,7 @@ class Tributary < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.1.2/tributary_1.1.2_darwin_amd64.tar.gz"
-      sha256 "e52b641cea010660ea38c61dffb372178c81af65e3f9ca2936bace997faf4c18"
+      sha256 "fc74626471f26b3b0aaed4bae78ff88bbb4b2fa92a92a1fa6c699f5250632733"
 
       define_method(:install) do
         bin.install "tributary"
@@ -19,7 +19,7 @@ class Tributary < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.1.2/tributary_1.1.2_darwin_arm64.tar.gz"
-      sha256 "9c0cfa77eae934c73af31b4c22ef43a6533981ece4517c7cab61ac7eac936797"
+      sha256 "774ce7534f748273a0ebafd616691b8483d0c647554b66b89b51c9aa07a3ce6d"
 
       define_method(:install) do
         bin.install "tributary"
@@ -30,14 +30,14 @@ class Tributary < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.1.2/tributary_1.1.2_linux_amd64.tar.gz"
-      sha256 "6e091b6a23c5f2c6fe2f0147be4b957252f88fdec33c1456106a6f7dea2b01df"
+      sha256 "0664b10f7ea107c1577598a9c7d23c7b2b4aabd014d2ac49843bda66a66f1adc"
       define_method(:install) do
         bin.install "tributary"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.1.2/tributary_1.1.2_linux_arm64.tar.gz"
-      sha256 "5fb30ce91980c574d7cd1426aa53f2dba0a4a1ef0093844be436a3efc3c0e7ec"
+      sha256 "3906233efabe2b75a54a8bf0dbbd9dfd7da15b2b5f3bf098f2c2d58548795e32"
       define_method(:install) do
         bin.install "tributary"
       end
