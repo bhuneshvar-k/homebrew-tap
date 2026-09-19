@@ -5,21 +5,21 @@
 class Tributary < Formula
   desc "Postgres subsetting & sync CLI"
   homepage "https://github.com/bhuneshvar-k/tributary"
-  version "1.2.0"
+  version "1.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.2.0/tributary_1.2.0_darwin_amd64.tar.gz"
-      sha256 "1b503a7477042f6e1a36b833a74a356a23b1f9fd6f7fe5418d9a45689547d9c1"
+      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.3.0/tributary_1.3.0_darwin_amd64.tar.gz"
+      sha256 "4b0ba6d30b58d9eb531963daaae245c2921ea731096f4b928e37a8ea125a570c"
 
       define_method(:install) do
         bin.install "tributary"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.2.0/tributary_1.2.0_darwin_arm64.tar.gz"
-      sha256 "7c6aa365bb340e8598990228cd2a258eb2f70ce6fdb1b0c9373dfde47dd45e40"
+      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.3.0/tributary_1.3.0_darwin_arm64.tar.gz"
+      sha256 "034fea025228e0c64aff4fecb5c0e57d8721da68b3e781d309ee1e546817f894"
 
       define_method(:install) do
         bin.install "tributary"
@@ -29,15 +29,15 @@ class Tributary < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.2.0/tributary_1.2.0_linux_amd64.tar.gz"
-      sha256 "1d780541fcf14f5451571273ff2fbfa241534c3e1bddbeeca79bbc23405df647"
+      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.3.0/tributary_1.3.0_linux_amd64.tar.gz"
+      sha256 "0b7e58bdc44121aae367a51d31411407f1453bc795d23a762b9e5bb6846d3cf2"
       define_method(:install) do
         bin.install "tributary"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.2.0/tributary_1.2.0_linux_arm64.tar.gz"
-      sha256 "fbda268b765b900f15d6faa48cd17d5b30f69dc0e64d4fd963bb75ccf4051da6"
+      url "https://github.com/bhuneshvar-k/tributary/releases/download/v1.3.0/tributary_1.3.0_linux_arm64.tar.gz"
+      sha256 "1cf341cda6b41a6b5b6a84f3d5159b27b2ef95169b01c69cbf0178c12b308af9"
       define_method(:install) do
         bin.install "tributary"
       end
